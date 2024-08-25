@@ -8,7 +8,6 @@ const academicManagementApi = baseApi.injectEndpoints({
         method: "GET",
       }),
       transformResponse: (response) => {
-        console.log("This is response inside form the api-->", response);
         return {
           data: response.data,
           meta: response.meta,
